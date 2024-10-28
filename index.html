@@ -167,6 +167,8 @@
         </div>
     </div>
 
+    <div class="game-container" id="gameBoard"></div>
+    
     <script>
         const emojis = ['🐱', '🐶', '🐰', '🐼', '🐨', '🦊', '🐯', '🦁'];
         let cards = [...emojis, ...emojis];
@@ -216,7 +218,7 @@
                 document.getElementById('matches').textContent = matchedPairs;
                 flippedCards = [];
                 if (matchedPairs === emojis.length) {
-                    setTimeout(() => alert('恭喜你完成遊戲！'), 500);
+                    setTimeout(() => alert('Congratulations, you completed the game!'), 500);
                 }
             } else {
                 setTimeout(() => {
